@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularios DevWeb</title>
+  <link rel="stylesheet" href="css/estilo_formulario.css">
+</head>
+<body>
+  <h2>Gestión de Productos y Servicios</h2>
+
+  <!-- Alta -->
+  <section class="caja">
+    <h3>Alta de Producto</h3>
+    <form>
+      <label>Nombre:</label>
+      <input type="text" name="nombre">
+      <label>Precio:</label>
+      <input type="number" name="precio">
+      <label>Descripción:</label>
+      <textarea name="descripcion"></textarea>
+      <button type="submit">Agregar</button>
+    </form>
+  </section>
+
+  <!-- Modificación -->
+  <section class="caja">
+    <h3>Modificación</h3>
+    <form>
+      <label>ID Producto:</label>
+      <input type="number" name="id">
+      <label>Nuevo Nombre:</label>
+      <input type="text" name="nuevo_nombre">
+      <label>Nuevo Precio:</label>
+      <input type="number" name="nuevo_precio">
+      <button type="submit">Modificar</button>
+    </form>
+  </section>
+
+  <!-- Eliminación -->
+  <section class="caja">
+    <h3>Eliminación</h3>
+    <form>
+      <label>ID Producto:</label>
+      <input type="number" name="id_eliminar">
+      <button type="submit" class="eliminar">Eliminar</button>
+    </form>
+  </section>
+</body>
+</html>
